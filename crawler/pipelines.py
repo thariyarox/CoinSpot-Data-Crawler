@@ -28,3 +28,4 @@ class TextDataPipeline:
         dataItem = str(item).replace('{', '')
         dataItem = dataItem.replace('}', '')
         self.file.write(dataItem+'\n')
+        return item

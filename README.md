@@ -28,6 +28,11 @@ You can save scraped items in a file. Add `-o FILE` to the command line. These f
 * CSV
 * XML
 
+For example, to generate the CSV file you can run the following command -
+```sh
+(venv) $ scrapy crawl coinspot -o test_data.csv
+```
+
 ## Scraped Items
 
 * `code_name`: Coin Code name

@@ -2,7 +2,7 @@ import csv
 import os
 
 csv_path = os.path.join(os.path.dirname(__file__), "../data/test_data.csv")
-new_csv_path = os.path.join(os.path.dirname(__file__), "processed_data.csv")
+new_csv_path = os.path.join(os.path.dirname(__file__), "../data/processed_data.csv")
 with open(csv_path, 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter = ',')
     with open(new_csv_path, 'w') as processed_csv_file:

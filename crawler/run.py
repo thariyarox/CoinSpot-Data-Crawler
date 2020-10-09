@@ -6,7 +6,5 @@ result = subprocess.Popen('scrapy crawl coinspot -o '+os.path.join(dirname,'../d
                           stdout=subprocess.PIPE, shell=True).communicate()[0]
 data_process = subprocess.Popen('python '+os.path.join(dirname,'../processors/process_data.py'),
         stdout=subprocess.PIPE, shell=True).communicate()[0]
-print('process start')
 csv_process = subprocess.Popen('python '+os.path.join(dirname,'../processors/process_csv.py'),
         stdout=subprocess.PIPE, shell=True).communicate()[0]
-print('process end')
